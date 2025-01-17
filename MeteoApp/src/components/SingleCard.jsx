@@ -36,10 +36,8 @@ const SingleCard = ({ city }) => {
       </Col>
 
       <Col xs={5} className="d-flex align-items-center justify-content-center">
-        <div>
           <h3>{city.name}</h3>
           <p>{city.sys.country}</p>
-        </div>
       </Col>
 
       <Col xs={3} className="d-flex align-items-center justify-content-center">
