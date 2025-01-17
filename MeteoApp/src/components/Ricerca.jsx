@@ -14,13 +14,13 @@ const Ricerca = () => {
   return (
     <Row className="justify-content-center mt-4">
       <Col xs={12} md={4} className="text-center">
-        <h1 className="mb-3">Meteo</h1>
+        <h1 className="mb-3">Weather</h1>
         <Form.Group>
         <Form.Label className="mb-3">Select Your City</Form.Label>
           <Form.Control
           className="mb-3"
             type="search"
-            placeholder="Cerca un luogo"
+            placeholder="Search..."
             value={searchCity}
             onChange={(e) => setSearchCity(e.target.value)}
             required

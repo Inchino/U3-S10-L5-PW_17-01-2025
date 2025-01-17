@@ -41,7 +41,7 @@ const CityDetails = () => {
 
   return (
     <>
-    <h1 className="my-3 text-center">Meteo</h1>
+    <h1 className="my-3 text-center">Weather</h1>
     <div className="d-flex justify-content-center text-center">
       {isLoading && <Loading />}
       {isError && <Error />}
@@ -54,9 +54,9 @@ const CityDetails = () => {
         <Card.Body>
           <Card.Title>{details.name} - {details.sys.country}</Card.Title>
           <Card.Text>{details.weather[0].main} - {details.weather[0].description}</Card.Text>
-          <Card.Text>Massima: {(details.main.temp_max - 273.15).toFixed(2)}°C - Minima: {(details.main.temp_min - 273.15).toFixed(2)}°C</Card.Text>
-          <Card.Text>Umidità: {details.main.humidity}%</Card.Text>
-          <Card.Text>Vento: {details.wind.speed} nodi</Card.Text>
+          <Card.Text>Max: {(details.main.temp_max - 273.15).toFixed(2)}°C - Min: {(details.main.temp_min - 273.15).toFixed(2)}°C</Card.Text>
+          <Card.Text>Humidity: {details.main.humidity}%</Card.Text>
+          <Card.Text>VWind: {details.wind.speed} mph</Card.Text>
           <Button variant="info" className="text-white" onClick={() => {
                   navigate('/')
                 }}>Go Home</Button>
