@@ -14,7 +14,7 @@ function App() {
     <Routes>
     <Route path="/" element={<HomePage/>} />
     <Route path="/preferiti" element={<Preferiti/>} />
-    <Route path="/city-details/:city" element={<CityDetails/>} />
+    <Route path="/city-details/:cityID" element={<CityDetails/>} />
     </Routes>
     <FooterMeteo/>
     </BrowserRouter>
