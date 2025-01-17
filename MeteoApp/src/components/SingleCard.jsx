@@ -1,13 +1,13 @@
-import { Row, Col, Image } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 
-const SingleCard = () =>{
+const SingleCard = ({city}) =>{
     return (
           <Row className="justify-content-center mt-4">
             <Col xs={4} className="text-center">
-            <Image/> 
-            <p>gradi</p>
+            <i>{city.weather.icon}</i> 
+            <p>{city.main.temp}</p>
             </Col>
-            <Col xs={8}> Nome città cercata</Col>
+            <Col xs={8}>{city.name}</Col>
           </Row>
     )
 }
